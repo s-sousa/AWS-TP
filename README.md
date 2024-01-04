@@ -1,5 +1,5 @@
 # AWS TP - CAPGIPI6
-**Sergio ESTEVES DE SOUSA**
+**Author: Sergio ESTEVES DE SOUSA**
 
 ---
 
