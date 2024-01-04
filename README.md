@@ -9,10 +9,10 @@ Ce code Terraform vise à créer une infrastructure AWS comprenant : une instanc
 
 Le code est organisé dans les fichiers suivants:
 
-00_providers.tf
-01_resources.tf
-02_variables.tf
-variables-tp.tfvars
+- 00_providers.tf
+- 01_resources.tf
+- 02_variables.tf
+- variables-tp.tfvars
 
 ## Overview des fichiers
 
@@ -46,7 +46,7 @@ variables-tp.tfvars
 - `instance_type` : type d'instance EC2 à créer, par défaut "t2.micro".
 - `ami_id` : ID de l'AMI à utiliser dans l'instance EC2, par défaut "ami-0cc814d99c59f3789".
 
-### variables.tfvars
+### variables-tp.tfvars
 
 **Objectif:**
 - Fournir les valeurs à utiliser dans "02_variables.tf".
