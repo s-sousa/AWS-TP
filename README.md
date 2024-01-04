@@ -36,7 +36,7 @@ Le code est organisé dans les fichiers suivants:
 - Création d'un groupe de sécurité nommé "allow_tls".
 - Création d'une subnet dans le VPC "mon-vpc".
 
-### 0variables.tf
+### variables.tf
 
 **Objectif:**
 - Déclaration des variables utilisées dans notre code Terraform afin de le rendre plus flexible et modulaire.
