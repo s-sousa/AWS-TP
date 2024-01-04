@@ -9,14 +9,14 @@ Ce code Terraform vise à créer une infrastructure AWS comprenant : une instanc
 
 Le code est organisé dans les fichiers suivants:
 
-00_providers.tf
-01_resources.tf
-02_variables.tf
-variables-tp.tfvars
+- main.tf
+- resources.tf
+- variables.tf
+- variables-tp.tfvars
 
 ## Overview des fichiers
 
-### 00_providers.tf
+### main.tf
 
 **Objectif:**
 - Déclarer les providers à utiliser (AWS dans ce cas) et les configurer, ainsi que déclarer le backend S3 à utiliser.
@@ -25,7 +25,7 @@ variables-tp.tfvars
 - Configure le provider AWS avec les credentials nécessaires.
 - Déclare le backend S3 à utiliser (bucketgipi) pour sauvegarder le Terraform state.
 
-### 01_resources.tf
+### resources.tf
 
 **Objectif:**
 - Définir les ressources AWS à créer, comprenant une instance EC2 de type t2.micro, un VPC "mon-vpc", une subnet dans ce VPC et un groupe de sécurité "allow_tls".
@@ -36,7 +36,7 @@ variables-tp.tfvars
 - Création d'un groupe de sécurité nommé "allow_tls".
 - Création d'une subnet dans le VPC "mon-vpc".
 
-### 02_variables.tf
+### 0variables.tf
 
 **Objectif:**
 - Déclaration des variables utilisées dans notre code Terraform afin de le rendre plus flexible et modulaire.
@@ -46,7 +46,7 @@ variables-tp.tfvars
 - `instance_type` : type d'instance EC2 à créer, par défaut "t2.micro".
 - `ami_id` : ID de l'AMI à utiliser dans l'instance EC2, par défaut "ami-0cc814d99c59f3789".
 
-### variables.tfvars
+### variables-tp.tfvars
 
 **Objectif:**
 - Fournir les valeurs à utiliser dans "02_variables.tf".
@@ -64,5 +64,5 @@ variables-tp.tfvars
 
 ## Notes
 
-- Ce code est designé a la création de resources dans la region AWS "eu-west-3". La region peut être modifié dans les fichiers `00_providers.tf` and `01_resources.tf`
+- Ce code est designé a la création de resources dans la region AWS "eu-west-3". La region peut être modifié dans les fichiers `main.tf` and `resources.tf`
 
