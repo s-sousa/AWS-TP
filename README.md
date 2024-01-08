@@ -59,8 +59,8 @@ Le code est organisé dans les fichiers suivants:
 1. **Prerequisites**: Installation de Terraform dans la machine, ainsi que l'installation de la AWS CLI et sa configuration avec les keys d'acces.
 2. **Configuration**: Mise a jour des variables dans `variables-tp.tfvars` si nécessaire pour la configuration souhaitée.
 3. **Execution**:
-    terraform init
-    terraform apply -var-file="variables-tp.tfvars"
+ - terraform init
+ - terraform apply -var-file="variables-tp.tfvars"
 
 ## Notes
 
