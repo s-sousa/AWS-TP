@@ -49,7 +49,7 @@ Le code est organisé dans les fichiers suivants:
 ### variables-tp.tfvars
 
 **Objectif:**
-- Fournir les valeurs à utiliser dans "02_variables.tf".
+- Fournir les valeurs à utiliser dans "variables.tf".
 
 **Détails:**
 - Permet la modification des valeurs de variables sans avoir à changer le code Terraform pour le rendre plus modulaire et réutilisable pour différents besoins.
